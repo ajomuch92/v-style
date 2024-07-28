@@ -1,0 +1,35 @@
+{
+  "name": "v-style",
+  "version": "0.0.1",
+  "description": "A project to create a directive to inject style tags into DOM",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajomuch92/v-style.git"
+  },
+  "keywords": [
+    "v-style",
+    "styles",
+    "css",
+    "css",
+    "inline",
+    "styles",
+    "inline",
+    "styled",
+    "components"
+  ],
+  "author": "Aaron Montes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajomuch92/v-style/issues"
+  },
+  "homepage": "https://github.com/ajomuch92/v-style#readme"
+}
