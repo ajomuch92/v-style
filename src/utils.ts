@@ -13,3 +13,14 @@ export function toKebabCase(str: string): string {
     .replace(/[\s_]+/g, '-')
     .toLowerCase();
 }
+
+export function sortObjectKeys(obj: Record<string, any>): Record<string, any> {
+  const sortedKeys = Object.keys(obj).sort();
+  const sortedObj = {};
+
+  sortedKeys.forEach(key => {
+    sortedObj[key] = obj[key];
+  });
+
+  return sortedObj;
+}

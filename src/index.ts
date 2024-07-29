@@ -1,10 +1,11 @@
 import { App, Directive } from 'vue';
-import { stringToHash, toKebabCase } from './utils';
+import { sortObjectKeys, stringToHash, toKebabCase } from './utils';
 
 const map = new Map();
 
 function addScriptTag(el: any, value: any) {
-    const styles = Object.entries(value).reduce(
+    const valueSorted = sortObjectKeys(value);
+    const styles = Object.entries(valueSorted).reduce(
         (previusValue, currentValue) => {
             const [key, value] = currentValue;
             if (value)
